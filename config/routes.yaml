@@ -1,0 +1,17 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+   
+
+api_hello:
+    path: /api/hello
+    controller: App\Controller\ApiController::hello
+    methods: GET
+
+api_greet:
+    path: /api/greet/{name}
+    controller: App\Controller\ApiController::greet
+    methods: GET
+
